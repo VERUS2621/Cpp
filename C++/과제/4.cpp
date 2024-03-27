@@ -13,7 +13,7 @@ int arr(int arr[])
         int size = 0;
         for (int i=0; i < 100; i++)
         {
-            cout << "배열의 들어갈 숫자를 입력하세요: " << endl;
+            cout << "배열의 들어갈 숫자를 입력하세요 : ";
             cin >> arr[i];
             size += 1; // 입력된 갯수
             if (arr[i] == 0) break; // 0 입력되면 입력 중지

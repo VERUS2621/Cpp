@@ -32,7 +32,7 @@ int main(void)
 {
     int num; // 숫자 n
     
-    cout << "50 이하의 정수를 입력하세요" << endl; 
+    cout << "50 이하의 정수를 입력하세요 : ";
     cin >> num;
     
     while(true)
