@@ -15,3 +15,48 @@
     배열 a = 9 8 7 6 5
     배열 b = 1 2 3 4 5
 */
+
+#include <iostream>
+using namespace std;
+
+void swapArray(int *p, int *q, int size); // p, q는 배열을 가리키고, size는 배열의 크기
+void printArray(int *p, int size);
+int main()
+{
+    int a[] = { 1,2,3,4,5 };
+    int b[] = { 9,8,7,6,5 };
+
+    swapArray(a, b, 5); // 배열 이름으로 호출(포인터)
+    return 0;
+}
+
+void swapArray(int *p, int *q, int size) // p, q는 배열을 가리키고, size는 배열의 크기
+{
+    cout << "배열 a = ";
+    printArray(p, 5);
+    cout << "배열 b = ";
+    printArray(q, 5);
+    
+    for (int i=0; i<size; i++)
+    {
+        int temp;
+        temp = p[i];
+        p[i] = q[i];
+        q[i] = temp;
+    }
+    
+    cout << "\n" << "swapArray() 실행..." << endl;
+    cout << "배열 a = ";
+    printArray(p, 5);
+    cout << "배열 b = ";
+    printArray(q, 5);
+}
+
+void printArray(int *p, int size)
+{
+    for (int i = 0; i<size; i++)
+    {
+        cout << p[i] << " "; 
+    }
+    cout << "\n";
+}
