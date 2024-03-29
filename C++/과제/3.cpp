@@ -7,27 +7,29 @@
 #include <iostream>
 using namespace std;
 
-void gugudan(int a, int b)
+void gugudan(int a, int b) // 계산 출력 함수에서 
 {
- for (int i = a; i <= b; i++)
- {
-    for(int j = 1; j<10; j++)
+    for (int i = 1; i <= 9; i++) 
     {
-        cout << i << " * " << j << " = " << j*i << endl;
+        for (int j = a; j <= b; j++)
+        {
+            cout << j << " * " << i << " = " << j * i << "\t"; 
+        }
+        cout << endl;
     }
-    cout << endl;
- }
 }
-
-
-
 
 int main()
 {
     int a, b;
-    cout << "a단 부터 b단 구구단을 출력합니다. a, b 순서대로 입력하세요(띄어쓰기로 구분)" << endl;;
-    cin >> a >> b; 
+    while (true)
+    {
+        cout << "a단 부터 b단 구구단을 출력합니다. a, b 순서대로 입력하세요(띄어쓰기로 구분)" << endl;
+        cin >> a >> b; // a 단 b 단 main에서 받음
+        if (a < b) break;
+    }
     gugudan(a, b);
     return 0;
 }
+
 

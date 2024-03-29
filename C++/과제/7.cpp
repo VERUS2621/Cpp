@@ -20,7 +20,7 @@
 using namespace std;
 
 void swapArray(int *p, int *q, int size); // p, q는 배열을 가리키고, size는 배열의 크기
-void printArray(int *p, int size);
+void printArray(int *p, int size); // 함수 원형
 int main()
 {
     int a[] = { 1,2,3,4,5 };
@@ -32,7 +32,7 @@ int main()
 
 void swapArray(int *p, int *q, int size) // p, q는 배열을 가리키고, size는 배열의 크기
 {
-    cout << "배열 a = ";
+    cout << "배열 a = "; // 교환 전 원래 배열
     printArray(p, 5);
     cout << "배열 b = ";
     printArray(q, 5);
@@ -44,8 +44,8 @@ void swapArray(int *p, int *q, int size) // p, q는 배열을 가리키고, size
         p[i] = q[i];
         q[i] = temp;
     }
-    
-    cout << "\n" << "swapArray() 실행..." << endl;
+    // 두 배열 교환 후
+    cout << "\n" << "swapArray() 실행..." << endl; 
     cout << "배열 a = ";
     printArray(p, 5);
     cout << "배열 b = ";

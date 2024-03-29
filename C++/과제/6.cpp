@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-int factorial(int a)
+int factorial(int a) // 함수로 구현, 재귀활용
 {
     if (a <= 1)
     {
@@ -22,6 +22,6 @@ int main()
 {
     int n;
     cout << "팩토리얼 계산을 위한 숫자 입력 : ";
-    cin >> n;
+    cin >> n; // n은 main에서 입력받음
     cout << n << "! = " << factorial(n);
 }

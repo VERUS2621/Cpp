@@ -11,7 +11,7 @@ using namespace std;
 
 int maximum(int *p, int a)
 {
-  int max = p[0];
+  int max = p[0]; // 초기값
   for (int b=0; b < a; b++)
   {
     if (max < p[b])
@@ -24,12 +24,12 @@ int maximum(int *p, int a)
 
 int minimum(int *p, int a)
 {
-  int min = p[0];
+  int min = p[0]; // 초기값
   for (int b=0; b < a; b++)
   {
     if (min > p[b])
     {
-      min = p[b];
+      min = p[b]; 
     }
   }
   return min;

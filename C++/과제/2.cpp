@@ -11,18 +11,18 @@ using namespace std;
 void var()
 {
     int num;
-    int i = 0;
-    int sum = 0;
+    int i = 0; // 자연수 입력 갯수
+    int sum = 0; // 자연수 합
     while(true)
     {
     cout << "자연수를 입력하세요 : ";
     cin >> num;
     i += 1;
-    sum += num; 
+    sum += num; // 100을 넘어도 합과 평균에 포함하는 경우
 
     if (num >= 100) break; // 100을 넘은 숫자를 포함하는 경우로 코딩
     }
-    cout << "평균은 : " << sum/i << endl;
+    cout << "평균은 : " << sum/i << endl; // 작성한 함수에서 출력
     cout << "총 숫자의 합은 : " << sum << endl;
 
 }

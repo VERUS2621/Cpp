@@ -8,7 +8,7 @@
 #include <iostream>
 using namespace std;
 
-int arr(int arr[])
+int arr(int arr[]) // 배열 입력 함수
 {
         int size = 0;
         for (int i=0; i < 100; i++)
@@ -16,7 +16,7 @@ int arr(int arr[])
             cout << "배열의 들어갈 숫자를 입력하세요 : ";
             cin >> arr[i];
             size += 1; // 입력된 갯수
-            if (arr[i] == 0) break; // 0 입력되면 입력 중지
+            if (arr[i] == 0) break; // 0 입력되면 입력 중지, 입력값 0도 배열에 포함
         }
     return size;
     
@@ -26,11 +26,11 @@ int main()
 {
     int arr_input[100];
 
-    int size = arr(arr_input);
+    int size = arr(arr_input); // 배열 입력 함수
     
-    for (int i = size - 1; i >= 0; i--)
+    for (int i = size - 1; i >= 0; i--) // 배열 반대로 출력 main 에 구현
     {
-        cout << arr_input[i] << "\t";
+        cout << arr_input[i] << " ";
     }
     cout << endl;
 
