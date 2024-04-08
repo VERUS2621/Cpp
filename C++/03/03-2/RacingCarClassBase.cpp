@@ -18,14 +18,14 @@ private:
     int fuelGauge;
     int curSpeed;
 public:
-    void InitMembers(char * ID, int fuel);
+    void InitMembers(const char * ID, int fuel);
     void ShowCarState();
     void Accel();
     void Break();
 };
 
-void Car::InitMembers(char * ID, int fuel)
-{
+void Car::InitMembers(const char * ID, int fuel) // 변수는 동일 클래스 내에 정의된 함수이므로 접근 가능
+{ // 클래스 함수는 public 이므로 main 함수에서 호출이 가능하다. 따라서 main에서 함수 호출해서 변수 초기화 가능
     strcpy(gamerID, ID);
     fuelGauge=fuel;
     curSpeed=0;
