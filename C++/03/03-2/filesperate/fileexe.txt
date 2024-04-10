@@ -1,0 +1,8 @@
+g++ -c Car.cpp -o Car.o // 오브젝트 파일 생성
+g++ -c RacingMain.cpp -o RacingMain.o // 오브젝트 파일 생성
+// Car.h 클래스 선언 부는 생성하지 않음
+
+g++ Car.o RacingMain.o -o RacingApp // 실행파일 생성
+
+실행
+RacingApp 

@@ -5,7 +5,7 @@
             "label": "build",
             "type": "shell",
             "command": "g++",
-            "args": ["-g", "-o", "Car.h", "Car.cpp", "RacingMain.cpp"],
+            "args": ["-g", "-o", "Car", "Car.cpp", "RacingMain.cpp"],
             "group": {
                 "kind": "build",
                 "isDefault": true
