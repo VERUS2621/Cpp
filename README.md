@@ -26,3 +26,13 @@ Notion : https://cobalt-challenge-a01.notion.site/e44a7a603bd244e081d39fb2193213
 2-2 새로운 자료형 bool
 
 2-3 참조자의 이해
+
+2-4 delete & new
+
+#3
+
+3-1 struct
+
+3-2 class
+
+3-3 object-oriented programming
