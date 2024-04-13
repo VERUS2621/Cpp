@@ -40,7 +40,9 @@ public:
     }
     void BuyApples(FruitSeller &seller, int money)
     {
-        numOfApples+=seller.SaleApples(money);
+        numOfApples+=seller.SaleApples(money); // 이처럼 하나의 객체가 다른 하나의 객체에게 메시지를 전달하는 방법은
+        //(어떠한 행위의 요구를 위한 메시지 전달) 함수 호출을 기반으로 한다.
+        // 그래서 객체지향에서는 이러한 형태의 함수호출을 가리켜 메시지전달(Message Passing)이라 한다.
         myMoney-=money;
     }
     void ShowBuyResult()

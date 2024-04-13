@@ -6,14 +6,18 @@ class Calculator
 private:
     float num1;
     float num2;
-    int countAdd=0;
-    int countMin=0;
-    int countDiv=0;
-    int countMul=0; // 클래스 변수 선언할 때 0으로 초기화
+    int countAdd;
+    int countMin;
+    int countDiv;
+    int countMul; 
 public:
-    void Init(){} // 멤버 변수를 초기화 하는 역할이지만 포인터로 연결하지 않았기 때문에
-    // 위 형태 그대로 복붙해서 0으로 초기화 하면 지역변수로 함수 내에서만 초기화 됨
-    // 따라서 Init 함수로 초기화 할거면 클래스 변수랑 포인터 연결을 해줘야함.
+    void Init()
+    {
+    countAdd=0;
+    countMin=0;
+    countDiv=0;
+    countMul=0; // 클래스 변수 선언할 때는 초기화 불가함. (파이썬은 가능)
+    } // 생성자로 변수 초기화
     float Add(float num1, float num2)
     { 
         countAdd += 1; 
