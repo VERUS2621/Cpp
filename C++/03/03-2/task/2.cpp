@@ -8,7 +8,7 @@ private:
 char message[100];
 public:
 void SetString(const char a[]); // const 입력받은 문자열이 함수내에서 수정되지 않았음을 알림
-void ShowString();    
+void ShowString();    // const chat a[] 대신 -> char* s 포인터  사용가능
 };
 
 void Printer::SetString(const char a[])
