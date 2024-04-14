@@ -36,3 +36,7 @@ Notion : https://cobalt-challenge-a01.notion.site/e44a7a603bd244e081d39fb2193213
 3-2 class
 
 3-3 object-oriented programming
+
+#4
+
+4-1 information Hiding
