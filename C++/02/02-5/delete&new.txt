@@ -1,0 +1,10 @@
+int형 변수의 할당 int * ptr1=new int;
+double형 변수의 할당 double * ptr2=new double;
+길이가 3인 int형 배열의 할당 int * arr1=new int[3];
+길이가 7인 double형 배열의 할당 double * arr2=new double[7];
+
+앞서 할당한 int형 변수의 소멸 delete ptr1;
+앞서 할당한 double형 변수의 소멸 delete ptr2;
+앞서 할당한 int형 배열의 소멸 delete []arr1;
+앞서 할당한 double형 배열의 소멸 delete []arr2;
+

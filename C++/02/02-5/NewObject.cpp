@@ -14,10 +14,10 @@ class Simple
 int main(void)
 {
     cout<< "case 1: ";
-    Simple * sp1=new Simple;
+    Simple * sp1=new Simple; // 생성자 호출 함
 
     cout<< "case 2: ";
-    Simple * sp2=(Simple*)malloc(sizeof(Simple)*1);
+    Simple * sp2=(Simple*)malloc(sizeof(Simple)*1); // 생성자 호출 안함
 
     cout<<endl<<"end of main"<<endl;
     delete sp1;
