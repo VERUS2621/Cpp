@@ -26,13 +26,17 @@ double Circle::getArea()
 int main(void)
 {
     Circle red[3];
+    int count=0;
     for (int i=0; i<4; i++)
     {
         int k = 0;
         cin >> k;
         red[i].setRadius(k);
+        if(red[i].getArea()>100)
+        {
+            count +=1;
+        }
     }
-    int num=0;
     
 
     return 0;
