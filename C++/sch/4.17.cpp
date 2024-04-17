@@ -20,13 +20,13 @@ int main(void)
     {
     cout << "원의 개수 :";
     cin >> n;
-    Circle *p =new Circle[n];
-    if (n<0) { break; }
+    Circle *ptr =new Circle[n];
+    if (n>0) { break; }
     }
-
+    Circle *ptr = ;
     for (int i=0; i<n; i++)
     {
+        int a=0;
         cout << "원 " << i+1 << "의 반지름 >> ";
-        cin >> p[i].set
-    }
+        cin >> p[i].setRadius(a);
 }
