@@ -1,13 +1,14 @@
 #include <iostream>
 using namespace std;
 
-class Person {
+class Person { // 이름을 저장하는 하나의 클래스
     string name;
 public:
     Person(){ }
     Person(string name) { this->name = name; }
     string getName() {return name;}
-    void setName(string name) { this->name = name; }
+    void setName(string name) { this->name = name; } 
+    // 코드의 유연성을 위해 작성 위 프로그램에서는 사용되지 않음
 };
 
 class Family {
@@ -38,8 +39,9 @@ public:
 };
 
 int main() {
-    Family* simpson = new Family("Simpson", 3);
-    simpson->setName(0, "Mr.Simpson");
+    Family* simpson = new Family("Simpson", 3); // 가족명, 가족 크기
+    simpson->setName(0, "Mr.Simpson"); 
+    //  family 클래스의 setname을 사용해서 person 배열에 인덱스, 이름 설정
     simpson->setName(1, "Mrs.Simpson");
     simpson->setName(2, "Bart Simpson");
     simpson -> show();
