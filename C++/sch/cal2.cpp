@@ -2,6 +2,7 @@
 #include <string>
 
 using namespace std;
+// 스택 구현 및 postfix 정의 함수는 가져온 함수임.
 
 // 스택 노드 구조체 정의
 struct StackNode {
