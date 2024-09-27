@@ -1,42 +1,32 @@
 # C++
-C++ 언어 공부
+C++ 언어 공부 -> 언어, 프로젝트는 github 정리 예정
 
 출처, 자료 : 윤성우 저 열혈강의 C++ 프로그래밍
 
-기록 https://blog.naver.com/revrow2621/223325458992
 
-Notion : https://cobalt-challenge-a01.notion.site/e44a7a603bd244e081d39fb2193213c0?pvs=4
+## 큰 목차
+| Chapter | Link | 
+| -------- | -------- |
+| C++ 로의 전환 | 
+| C언어 기반 C++ 1  | 데이터 | 
+| C언어 기반 C++ 2  | 데이터 |
+| 객체 지향의 도입| 
+| 클래스의 기본 | 데이터 | 
+| 클래스의 완성 | 데이터 |
+| 복사 생성자| 데이터 | 
+| friend, static, const | 데이터 |
+| 객체지향의 전개 | 
+| 상속(Inheritance) | 데이터 | 
+| 상속과 다형성 | 데이터 |
+| 가상(Virtual)의 원리와 다중상속 | 데이터 | 
+| 객체지향의 완성 | 
+| 연산자 오버로딩 1 | 데이터 |
+| 연산자 오버로딩 2 | 데이터 | 
+| String 클래스의 디자인 | 데이터 |
+| 템플릿(Template) 1 | 데이터 | 
+| 템플릿(Template) 2 | 데이터 |
+| 예외처리(Exception Handling) | 데이터 |
+| C++의 형변환 연산자 | 데이터 |
 
-#1
 
-1-1 바뀐 printf, scanf
 
-1-2 함수 오버라이딩
-
-1-3 매개변수와 디폴트 값
-
-1-4 인라인 함수
-
-1-5 이름공간
-
-#2
-
-2-1 C 언어 복습
-
-2-2 새로운 자료형 bool
-
-2-3 참조자의 이해
-
-2-4 delete & new
-
-#3
-
-3-1 struct
-
-3-2 class
-
-3-3 object-oriented programming
-
-#4
-
-4-1 information Hiding
