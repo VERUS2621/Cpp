@@ -1,3 +1,4 @@
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -20,7 +21,7 @@ typedef struct __Point // 구조체 선언
 
 Point& PntAdder(const Point &p1, const Point &p2)
 {
-    Point* result=new Point;
+    Point* result = new Point;
     result->xpos = p1.xpos + p2.xpos; // 점 1개
     result->ypos = p1.ypos + p2.ypos; // 점 2개
     return *result; // 반환
@@ -35,23 +36,30 @@ Point& PntAdder(const Point &p1, const Point &p2)
 다음 두 질문에 답을 할 수 있어야 한다.
 
 - 동적할당 한 변수를 함수의 참조형 매개변수의 인자로 어떻게 전달해야 하는가?
-- 함수 내에 선언된 변수를 참조형으로 반환하려면 해당 변수는 어떻게 선언해야 하는가? -? 포인터
+    - 역참조(포인터가 가리키는 메모리 주소에 저장된 값에 접근하는 과정)를 통해 변수 자체를 전달해야 함.
+
+- 함수 내에 선언된 변수를 참조형으로 반환하려면 해당 변수는 어떻게 선언해야 하는가? 
+    - 함수 내에서 동적 할당된 메모리를 참조 반환한다.
 */
 
 int main(void)
 {
+    // 동적으로 두 개의 Point 구조체 할당
     Point *a =new Point;
     Point *b =new Point;
 
-    cin >> a->xpos;
-    cin >> a->ypos;
-    cin >> b->xpos;
-    cin >> b->ypos;
+    cout << "Enter x and y for Point 1: ";
+    cin >> a->xpos >> a->ypos;
+    
+    cout << "Enter x and y for Point 2: ";
+    cin >> b->xpos >> b->ypos;
 
-    Point& result = PntAdder(*a, *b);
+    Point& result = PntAdder(*a, *b); // 역참조를 통해서 전달.
     cout << "Sum: (" << result.xpos << ", " << result.ypos << ")" << endl;
     
     delete a;
     delete b;
+    delete &result; // 함수 내부에서 할당된 동적 메모리 해제.
     return 0;
 }
+```

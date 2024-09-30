@@ -158,6 +158,17 @@ int main(void) {
     return 0;
 }
 ```
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(void){
+    int num;
+    cin >> num;
+    cout << num << endl;
+    return 0;
+}
+```
 
 전역적으로 사용하려면 함수 밖에 `using`을 선언해야 합니다.
 
