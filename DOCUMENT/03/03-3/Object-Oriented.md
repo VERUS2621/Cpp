@@ -1,4 +1,3 @@
-```markdown
 # 객체지향 프로그래밍 (Object-Oriented Programming, OOP)
 
 **C 언어**는 절차지향적 언어이고, **C++**은 **객체지향적 언어**입니다.
